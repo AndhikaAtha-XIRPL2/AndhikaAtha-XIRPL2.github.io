@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Ecommerce Website</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<!-- Include Google Fonts Poppins Medium 500 -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<!-- Custom CSS -->
+<style>
+    body, h1, h2, h3, h4, h5, h6, p, button {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+    }
+    .checkout-item {
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        .checkout-item img {
+            max-width: 100px;
+            margin-right: 20px;
+        }
+        .checkout-item-details {
+            flex-grow: 1;
+        }
+        .checkout-item-remove {
+            text-align: right;
+        }
+        .total-summary {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+</style>
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+          <div class="container">
+            <a class="navbar-brand" href="index.html">Zamazor</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" aria-current="page">Beranda <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Produk</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="cart.html" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Keranjang </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="cart.html">Keranjang</a>
+                            <a class="dropdown-item" href="cart.html">Keranjang</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex my-2 my-lg-0">
+                    <input class="form-control me-sm-2" type="text" placeholder="Search Products">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+      </div>
+    </nav>
+    
+  </header>
+  <main class="container my-5">
+    <h1 class="mb-4">Checkout</h1>
+    <div class="checkout-item">
+        <div class="d-flex align-items-center">
+            <img src="./image/razor mousepng.png" alt="Produk 1">
+            <div class="checkout-item-details">
+                <h5 class="mb-2">Razor Mouse</h5>
+                <p class="card-text">Razor mouse ni gg gimang rekomendasi gw.</p>
+                <p class="mb-2">Harga: $20</p>
+                <label for="quantity">Jumlah:</label>
+                <input type="number" id="quantity" name="quantity" value="1" min="1">
+            </div>
+            <div class="checkout-item-remove">
+                <button class="btn btn-danger">Hapus</button>
+            </div>
+        </div>
+    </div>
+    <div class="checkout-item">
+        <div class="d-flex align-items-center">
+            <img src="./image/logitech keyboard.png" alt="Produk 2">
+            <div class="checkout-item-details">
+                <h5 class="mb-2">Logitech Keyboard2</h5>
+                <p class="card-text">Keyboard murah gg gimang mantap betul.</p>
+                <p class="mb-2">Harga: $30</p>
+                <label for="quantity">Jumlah:</label>
+                <input type="number" id="quantity" name="quantity" value="1" min="1">
+            </div>
+            <div class="checkout-item-remove">
+                <button class="btn btn-danger">Hapus</button>
+            </div>
+        </div>
+    </div>
+    <div class="total-summary">
+        <h4 class="mb-3">Ringkasan Pembelian</h4>
+        <div class="d-flex justify-content-between">
+            <span>Total Harga Produk:</span>
+            <span>$50</span>
+        </div>
+        <div class="d-flex justify-content-between">
+            <span>Ongkos Kirim:</span>
+            <span>$10</span>
+        </div>
+        <div class="d-flex justify-content-between">
+            <span>Total:</span>
+            <span>$60</span>
+        </div>
+        <a href="pembayaran.html"><button class="btn btn-primary btn-lg mt-3">Lanjutkan ke Pembayaran</button></a>
+    </div>
+</main>
+    <!-- place footer here -->
+    <footer class="bg-dark text-light">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Tentang Kami</h5>
+                    <p>Zamazor menyediakan produk yang berkualitas dan terpercaya.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Kontak Kami</h5>
+                    <p>Alamat: Jl.Sundhi no21B</p>
+                    <p>Email: zamazorid@gmail.com</p>
+                    <p>Telepon: +62 8129321232</p>
+            </div>
+                <div class="col-md-4">
+                    <h5>Tautan Penting</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                        <li><a href="#">Syarat dan Ketentuan</a></li>
+                        <li><a href="#">Panduan Penggunaan</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
